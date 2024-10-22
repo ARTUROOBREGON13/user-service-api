@@ -1,9 +1,9 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from '../../app.module';
-import { UserService } from '../../services/user.service';
-import { ServiceCatalogService } from '../../services/service-catalog.service';
-import { CreateUserDto } from '../../dto/user/create-user.dto';
-import { CreateServiceDto } from '../../dto/service/create-service.dto';
+import { AppModule } from '../src/app.module';
+import { UserService } from '../src/services/user.service';
+import { ServiceCatalogService } from '../src/services/service-catalog.service';
+import { CreateUserDto } from '../src/dto/user/create-user.dto';
+import { CreateServiceDto } from '../src/dto/service/create-service.dto';
 
 async function seed() {
   const app = await NestFactory.createApplicationContext(AppModule);
